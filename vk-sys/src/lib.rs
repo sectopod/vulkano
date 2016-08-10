@@ -1492,6 +1492,7 @@ pub struct ComponentMapping {
 }
 
 #[repr(C)]
+#[derive(Clone, Copy, Debug, Hash, Eq, PartialEq)]
 pub struct ImageSubresourceRange {
     pub aspectMask: ImageAspectFlags,
     pub baseMipLevel: u32,
